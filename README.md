@@ -3,20 +3,37 @@ npm install
 npm start
 ```
 
-Fulgt instrukser til dette tidspunktet
+**Fulgt instrukser til dette tidspunktet**
 ```bash
 git checkout 24476cc2
 ```
 
-Practice min løsning \
+## Practice 1
 Outsource `<li>` til nytt kompoent og juster type annotations riktig
+
+**min løsning**
 ```bash
 git checkout 6ed6c55
 ```
 
-Practice løsning \
+**Practice løsning**
 ```bash
 git checkout 6993975
+```
+(jeg hadde flyttet `key` prop bort fra elementet inni array.map(e=>{}). Det var feil)
+
+**Igjen, fulgt etter instrukser til dette tidspunket**
+```bash
+git checkout 79d941f
+```
+
+## Practice 2
+gjør slik at click on to do -> fjerner to do
+
+**min løsning** \
+(fikk ikke til)
+```bash
+git checkout 
 ```
 
 

@@ -12,10 +12,16 @@ function App() {
       return [...prevState, newTodo]
     })
   }
+
+  const removeTodoHandler = (id: string) => {
+    setTodos((prevState) => {
+      return prevState.filter(element => element.id !== id)
+    })
+  }
   return (
     <div>
       <NewTodo onAddTodo={addTodoHandler} />
-      <Todos items={todos} />
+      <Todos onRemoveTodo={removeTodoHandler} items={todos} />
     </div>
   );
 }
