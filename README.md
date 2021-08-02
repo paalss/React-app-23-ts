@@ -16,7 +16,7 @@ git checkout 6ed6c55
 
 Practice løsning \
 ```bash
-git checkout 
+git checkout 6993975
 ```
 
 
