@@ -1,8 +1,7 @@
 import Todo from '../models/todo'
 
-
-const ListElement: React.FC<{ item: Todo }> = (props) => {
-  return <li key={props.item.id}>{props.item.text}</li>
+const ListElement: React.FC<{ itemText: string }> = (props) => {
+  return <li>{props.itemText}</li>
 }
 
 export default ListElement

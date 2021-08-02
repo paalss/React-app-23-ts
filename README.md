@@ -8,10 +8,15 @@ Fulgt instrukser til dette tidspunktet
 git checkout 24476cc2
 ```
 
-Practice \
+Practice min løsning \
 Outsource `<li>` til nytt kompoent og juster type annotations riktig
 ```bash
-git checkout
+git checkout 6ed6c55
+```
+
+Practice løsning \
+```bash
+git checkout 
 ```
 
 
