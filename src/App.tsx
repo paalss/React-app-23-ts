@@ -1,9 +1,13 @@
-import './App.css';
+import Todos from './components/Todos';
 
 function App() {
+  const items = [
+    'learn react',
+    'mysql cloud database'
+  ]
   return (
-    <div className="App">
-      
+    <div>
+      <Todos items={items}/>
     </div>
   );
 }
