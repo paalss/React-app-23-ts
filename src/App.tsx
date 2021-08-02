@@ -1,13 +1,14 @@
 import Todos from './components/Todos';
+import Todo from './models/todo'
 
 function App() {
-  const items = [
-    'learn react',
-    'mysql cloud database'
+  const todos = [
+    new Todo('Learn react'),
+    new Todo('mysql cloud')
   ]
   return (
     <div>
-      <Todos items={items}/>
+      <Todos items={todos} />
     </div>
   );
 }
