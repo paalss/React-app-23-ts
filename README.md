@@ -1,3 +1,20 @@
+```bash
+npm install
+npm start
+```
+
+Fulgt instrukser til dette tidspunktet
+```bash
+git checkout 24476cc2
+```
+
+Practice \
+Outsource `<li>` til nytt kompoent og juster type annotations riktig
+```bash
+git checkout
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
