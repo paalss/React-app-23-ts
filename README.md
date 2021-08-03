@@ -33,8 +33,21 @@ gjør slik at click on to do -> fjerner to do
 **min løsning** \
 (fikk ikke til)
 ```bash
-git checkout 
+git checkout a112722
 ```
+
+**Fasit løsning**
+```bash
+git checkout 710a788
+```
+
+**Min alternative løsning**
+```bash
+git checkout 3d8c8fc
+```
+
+
+
 
 
 # Getting Started with Create React App
