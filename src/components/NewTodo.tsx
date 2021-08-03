@@ -1,25 +1,27 @@
-import React, { useRef } from "react"
-import classes from './NewTodo.module.css'
+import React, { useContext, useRef } from "react";
+import { TodosContext } from "../store/todos-context";
+import classes from "./NewTodo.module.css";
 
-const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
-  const inputRef = useRef<HTMLInputElement>(null)
+const NewTodo: React.FC = () => {
+  const todosCtx = useContext(TodosContext);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   //  FormEvent: form submission
   //  MouseEvent: onClick
   const submitHandler = (event: React.FormEvent) => {
-    event.preventDefault()
+    event.preventDefault();
 
     // ts skjønner ikke at inputRef ikke possibly kan extracte denne value før form submission
     // ?: ta høyde for at den kan være null. try to get me that value, if not, store null.
     // !: du vet at possibly null value vil aldri kan være null. Når du er 100% sikker på at det ikke kan bli null
-    const enteredText = inputRef.current!.value
+    const enteredText = inputRef.current!.value;
 
     if (enteredText.trim().length === 0) {
-      return
+      return;
     }
 
-    props.onAddTodo(enteredText)
-  }
+    todosCtx.addTodo(enteredText);
+  };
 
   return (
     <form className={classes.form} onSubmit={submitHandler}>
@@ -27,6 +29,6 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
       <input type="text" id="text" ref={inputRef} />
       <button>Add Todo</button>
     </form>
-  )
-}
-export default NewTodo
+  );
+};
+export default NewTodo;
