@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { ProgressPlugin } from "webpack";
 import Todo from "../models/todo";
 
 type TodosContextObj = {
