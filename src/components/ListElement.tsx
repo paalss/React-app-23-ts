@@ -1,11 +1,13 @@
-import classes from './ListElement.module.css'
+import classes from "./ListElement.module.css";
 
-const ListElement: React.FC<{ onPress: (id: string) => void, itemText: string }> = (props) => {
-  const pressHandler = (id: string) => {
-    props.onPress(id)
-  }
-  return <li onClick={pressHandler} className={classes.item}>{props.itemText}</li>
+const ListElement: React.FC<{ onRemoveTodo: () => void; itemText: string }> = (
+  props
+) => {
+  return (
+    <li onClick={props.onRemoveTodo} className={classes.item}>
+      {props.itemText}
+    </li>
+  );
+};
 
-}
-
-export default ListElement
+export default ListElement;
